@@ -13,4 +13,7 @@ class Game
         name=gets.chomp 
         symbol=gets.chomp
         player_1=Player.new(name,symbol) 
+    end
+
+    
 end

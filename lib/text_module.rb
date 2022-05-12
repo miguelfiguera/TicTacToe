@@ -23,5 +23,11 @@ module Text
         puts "Congratz! You have won the game #{player}"
     end
 
+    def draw
+        puts "Board full and no winners today...it's a draw"
+    end
+
+    def new_game
+        puts "Do you want to play again? y/n."
 end
 
