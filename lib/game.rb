@@ -9,11 +9,16 @@ class Game
         @current_player = nil
     end
 
-    def create_players
+    def creating_players(number,player)
+        create_a_player(number)
         name=gets.chomp 
+        marker(number)
         symbol=gets.chomp
-        player_1=Player.new(name,symbol) 
+        player=Player.new(name,symbol) 
     end
 
-    
+    def game_setup 
+        creating_players(1,player_1)
+        creating_players(2,player_2) 
+
 end
