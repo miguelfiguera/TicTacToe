@@ -29,5 +29,12 @@ module Text
 
     def new_game
         puts "Do you want to play again? y/n."
+    end
+
+    def the_turn
+        player = @current_player
+        puts "it is your turn, #{player}"
+    end
+
 end
 

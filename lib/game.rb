@@ -29,11 +29,12 @@ class Game
     end
 
     def valid_move(number)
-        @positions[number]==number
+        @positions[number]==number.between(1,9)
     end
 
     def play_turns
-        @current_player = @player_one
+        the_turn
+        
     end
 
     def switch_current_player
