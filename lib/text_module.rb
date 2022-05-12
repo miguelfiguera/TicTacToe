@@ -36,5 +36,8 @@ module Text
         puts "it is your turn, #{player}"
     end
 
+    def choose_position
+        puts "Choose a free square to put your Marker"
+    end
 end
 
