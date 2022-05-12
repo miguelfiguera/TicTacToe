@@ -19,10 +19,13 @@ class GameBoard
         @positions[number] = symbol
     end
 
-    #methods for:
-    #a full board with no winners
-    #a winning combination
-    #to begin a new game when the current one finish
-    #structure of the game
-
+    def game_over?
+        WINNING_LINES.any? do |line|
+          if  line.all? {|marker| marker==player_one.symbol} == true
+            puts "#{player_one} wins the game!"
+          elsif line.all? {|marker| marker==player_two.symbol} == true
+            puts "#{player_two} wins the game!"
+          end
+        end
+    end
 end
